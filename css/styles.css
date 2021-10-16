@@ -5,6 +5,8 @@
     --color-blue: #2196F3;
     --color-accent-hover: #188CE8;
     --color-text: #757575;
+    --color-icon: rgba(117, 117, 117, 1);
+
     --color-hero: #2F303A;
     --color-title: #212121;
     --color-team-card: #F5F4FA;
@@ -17,6 +19,7 @@
     --color-shadow-five: rgba(0, 0, 0, 0.14);
     --color-shadow-six: rgba(0, 0, 0, 0.2);
     --color-bottom-line: #ECECEC;
+    --color-about-icon: #F5F4FA;
 
     --font-bold: bold;
     --font-middle: 500;
@@ -41,12 +44,6 @@ display: block;
 margin: 0; 
 }
 
-/* .hidden {
-white-space: nowrap;
-clip-path: inset(100%);
-clip: rect(0 0 0 0);
-overflow: hidden; 
-} */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -60,7 +57,6 @@ overflow: hidden;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 .container {
  margin-left: auto;
@@ -110,6 +106,18 @@ height: 31px;
 
 .span-blue {
 color: var(--color-blue);
+}
+
+.ikon-smartphone {
+width: 10px;
+height: 16px; 
+margin-right: 10px; 
+}
+
+.icon-envelope {
+width: 16px;  
+height: 12px;
+margin-right: 10px;
 }
 
 /* nav */
@@ -170,15 +178,18 @@ color: var(--color-blue);
 }
 
 /* hero */
-.hero,
-.footer {
-  background-color: var(--color-hero);
-}
-
 .hero {
 padding-top: 200px;
 padding-bottom: 200px;
 text-align: center;
+
+ max-width: 1600px;
+ height: 600px; 
+ margin: auto;
+ 
+ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+ background-image: url('../images/Imgf.jpg');
+ background-position: center;
 }
 
 .hero-title {
@@ -249,6 +260,21 @@ margin-bottom: 10px;
 color: var(--color-text);
 font-size: var(--font-size-min);
 line-height: 1.71;
+}
+
+.about-icon {
+display: flex;  
+width: 270px; 
+height: 120;
+background-color: var(--color-about-icon);
+border-radius: 4px;
+margin-bottom: 30px; 
+}
+
+.icon-excellence {
+width: 70px; 
+height: 70px;
+margin: auto;
 }
 
 /* work */
@@ -334,6 +360,10 @@ display: block;
 text-align: left;
 padding-top: 60px;
 padding-bottom: 60px;
+}
+
+.footer {
+background-color: var(--color-hero);
 }
 
 .logo.footer {
